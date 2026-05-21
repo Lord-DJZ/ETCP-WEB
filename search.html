@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse verified Sri Lankan eco-tourism experiences through the ETCP Eco-Discovery Hub.">
+  <title>Eco-Discovery Hub | ETCP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page search-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="ETCP home">
+        <span>ETCP</span>
+        <small>Eco Tourism Ceylon Platform</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="primary-menu" id="primaryMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Discover</a></li>
+          <li><a href="index.html#journeys">Eco-Journeys</a></li>
+          <li><a href="search.html#map">Voyager Map</a></li>
+          <li><a href="search.html#wishlist">Wishlist</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="login-link" href="login.html">Login</a>
+          <a class="btn btn-primary nav-cta" href="search.html">Start Exploring</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="listing-hero section-reveal" aria-labelledby="listing-title">
+      <div class="container listing-hero-grid">
+        <div class="listing-hero-copy reveal-child">
+          <p class="eyebrow">Eco-Discovery Hub</p>
+          <h1 id="listing-title">Explore Sustainable Eco-Tourism Experiences</h1>
+          <p>Compare verified eco-providers, sustainability ratings, local community impact, and responsible travel experiences across Sri Lanka.</p>
+        </div>
+        <div class="listing-hero-card reveal-child">
+          <span>12 Verified Eco-Providers</span>
+          <strong>12</strong>
+          <p>4.8 average sustainability rating across curated low-impact journeys.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="listing-search-section" aria-label="Search and filter eco-experiences">
+      <div class="container">
+        <form class="listing-search-form" action="search.html" method="get">
+          <label>
+            <span>Destination</span>
+            <select name="destination">
+              <option>Ella, Sri Lanka</option>
+              <option>Sinharaja, Sri Lanka</option>
+              <option>Yala, Sri Lanka</option>
+              <option>Knuckles, Sri Lanka</option>
+              <option>Mirissa, Sri Lanka</option>
+            </select>
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" name="date">
+          </label>
+          <label>
+            <span>Activity</span>
+            <select name="activity">
+              <option>Rainforest Walk</option>
+              <option>Wildlife Safari</option>
+              <option>Hiking</option>
+              <option>Whale Watching</option>
+              <option>Village Eco-Tour</option>
+            </select>
+          </label>
+          <label>
+            <span>Budget</span>
+            <select name="budget">
+              <option>LKR 8,000 - 15,000</option>
+              <option>LKR 15,000 - 25,000</option>
+              <option>LKR 25,000+</option>
+            </select>
+          </label>
+          <label>
+            <span>Sustainability Rating</span>
+            <select name="rating">
+              <option>4.0+ Eco Rating</option>
+              <option>4.5+ Eco Rating</option>
+              <option>Verified only</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <div class="category-chips" aria-label="Eco-experience category filters">
+          <button class="category-chip active" type="button" aria-pressed="true">All</button>
+          <button class="category-chip" type="button" aria-pressed="false">Wildlife Safari</button>
+          <button class="category-chip" type="button" aria-pressed="false">Rainforest Walk</button>
+          <button class="category-chip" type="button" aria-pressed="false">Hiking</button>
+          <button class="category-chip" type="button" aria-pressed="false">Whale Watching</button>
+          <button class="category-chip" type="button" aria-pressed="false">Eco-Lodge Stay</button>
+          <button class="category-chip" type="button" aria-pressed="false">Village Eco-Tour</button>
+          <button class="category-chip" type="button" aria-pressed="false">Conservation Volunteering</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section listing-section section-reveal" aria-labelledby="results-title">
+      <div class="container listing-layout">
+        <div class="listing-main">
+          <div class="results-toolbar reveal-child">
+            <div>
+              <p class="eyebrow">Eco-Discovery Hub</p>
+              <h2 id="results-title">Showing 12 verified eco-experiences</h2>
+            </div>
+            <div class="toolbar-actions">
+              <button class="btn btn-light filter-btn" type="button">Filters</button>
+              <label class="sort-control">
+                <span>Sort by</span>
+                <select>
+                  <option>Recommended</option>
+                  <option>Highest Sustainability</option>
+                  <option>Lowest Price</option>
+                  <option>Top Rated</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="results-grid reveal-child">
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/sinharaja-rainforest.jpg" alt="Dense rainforest trail in Sinharaja">
+                <button class="save-button" type="button" aria-label="Save Sinharaja Rainforest Walk" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Rainforest Walk</p>
+                <h3>Sinharaja Rainforest Walk</h3>
+                <p class="location">Sinharaja, Sri Lanka</p>
+                <div class="listing-meta"><span>5 hours</span><span>&#9733; 4.7/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.8</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 12,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/yala-wildlife-safari.jpg" alt="Safari grassland in Yala">
+                <button class="save-button" type="button" aria-label="Save Yala Wildlife Safari" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Wildlife Safari</p>
+                <h3>Yala Wildlife Safari</h3>
+                <p class="location">Yala, Sri Lanka</p>
+                <div class="listing-meta"><span>Half day</span><span>&#9733; 4.6/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.7</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 18,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card featured-result">
+              <div class="listing-card-media">
+                <img src="assets/images/knuckles-mountain-hike.jpg" alt="Misty mountain ridges in Knuckles">
+                <button class="save-button" type="button" aria-label="Save Knuckles Mountain Eco Hike" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Hiking</p>
+                <h3>Knuckles Mountain Eco Hike</h3>
+                <p class="location">Knuckles, Sri Lanka</p>
+                <div class="listing-meta"><span>Full day</span><span>&#9733; 4.9/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.9</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 15,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/mirissa-whale-watching.jpg" alt="Ocean horizon near Mirissa">
+                <button class="save-button" type="button" aria-label="Save Mirissa Whale Watching Experience" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Whale Watching</p>
+                <h3>Mirissa Whale Watching Experience</h3>
+                <p class="location">Mirissa, Sri Lanka</p>
+                <div class="listing-meta"><span>Morning tour</span><span>&#9733; 4.6/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.5</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 20,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/ella-eco-lodge.jpg" alt="Eco lodge surrounded by greenery in Ella">
+                <button class="save-button" type="button" aria-label="Save Ella Eco-Lodge Stay" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Eco-Lodge Stay</p>
+                <h3>Ella Eco-Lodge Stay</h3>
+                <p class="location">Ella, Sri Lanka</p>
+                <div class="listing-meta"><span>1 night</span><span>&#9733; 4.8/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.7</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 22,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/udawalawe-conservation-safari.jpg" alt="Udawalawe conservation safari landscape">
+                <button class="save-button" type="button" aria-label="Save Udawalawe Conservation Safari" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Conservation Safari</p>
+                <h3>Udawalawe Conservation Safari</h3>
+                <p class="location">Udawalawe, Sri Lanka</p>
+                <div class="listing-meta"><span>Half day</span><span>&#9733; 4.7/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.8</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 17,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/sigiriya-village-eco-tour.jpg" alt="Village landscape near Sigiriya">
+                <button class="save-button" type="button" aria-label="Save Village Eco-Tour in Sigiriya" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Village Eco-Tour</p>
+                <h3>Village Eco-Tour in Sigiriya</h3>
+                <p class="location">Sigiriya, Sri Lanka</p>
+                <div class="listing-meta"><span>4 hours</span><span>&#9733; 4.9/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.9</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 9,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/mountain-hiking-destination.jpg" alt="Mountain landscape for Horton Plains trail">
+                <button class="save-button" type="button" aria-label="Save Horton Plains Low-Impact Trail" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Hiking</p>
+                <h3>Horton Plains Low-Impact Trail</h3>
+                <p class="location">Horton Plains, Sri Lanka</p>
+                <div class="listing-meta"><span>Full day</span><span>&#9733; 4.5/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.6</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 14,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/coastal-conservation.jpg" alt="Coastal conservation water and rocks">
+                <button class="save-button" type="button" aria-label="Save Kalpitiya Coastal Conservation Tour" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Coastal Conservation</p>
+                <h3>Kalpitiya Coastal Conservation Tour</h3>
+                <p class="location">Kalpitiya, Sri Lanka</p>
+                <div class="listing-meta"><span>6 hours</span><span>&#9733; 4.5/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.6</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 13,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/rainforest-destination.jpg" alt="Rainforest biodiversity trail in Kanneliya">
+                <button class="save-button" type="button" aria-label="Save Kanneliya Forest Biodiversity Walk" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Rainforest Walk</p>
+                <h3>Kanneliya Forest Biodiversity Walk</h3>
+                <p class="location">Kanneliya, Sri Lanka</p>
+                <div class="listing-meta"><span>5 hours</span><span>&#9733; 4.6/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.7</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 11,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/how-etcp-works.jpg" alt="Ancient landscape and forest for cultural eco-tour">
+                <button class="save-button" type="button" aria-label="Save Anuradhapura Cultural Eco-Tour" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Cultural Eco-Tour</p>
+                <h3>Anuradhapura Cultural Eco-Tour</h3>
+                <p class="location">Anuradhapura, Sri Lanka</p>
+                <div class="listing-meta"><span>Full day</span><span>&#9733; 4.5/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.4</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 16,000</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="listing-card">
+              <div class="listing-card-media">
+                <img src="assets/images/coastal-conservation.jpg" alt="Mangrove waterway for eco boat ride">
+                <button class="save-button" type="button" aria-label="Save Bentota Mangrove Eco Boat Ride" aria-pressed="false">&#9825;</button>
+              </div>
+              <div class="listing-card-body">
+                <p class="eyebrow">Mangrove Eco-Tour</p>
+                <h3>Bentota Mangrove Eco Boat Ride</h3>
+                <p class="location">Bentota, Sri Lanka</p>
+                <div class="listing-meta"><span>3 hours</span><span>&#9733; 4.4/5</span></div>
+                <div class="badge-row"><span class="badge badge-rating">Sustainability Rating 4.5</span><span class="badge badge-verified">Verified Eco-Provider</span></div>
+                <div class="card-footer"><strong>LKR 8,500</strong><a class="btn btn-primary" href="details.html">View Details</a></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="listing-load reveal-child">
+            <a class="btn btn-primary" href="details.html">Compare Featured Eco-Pass</a>
+          </div>
+        </div>
+
+        <aside class="listing-sidebar reveal-child" aria-label="Destination suggestions">
+          <div class="sidebar-card" id="map">
+            <p class="eyebrow">ETCP Voyager Map</p>
+            <h2>Preview eco-experience locations and nearby responsible travel options.</h2>
+            <div class="mini-map" aria-hidden="true">
+              <span class="map-pin pin-one"></span>
+              <span class="map-pin pin-two"></span>
+              <span class="map-pin pin-three"></span>
+            </div>
+          </div>
+
+          <div class="destination-suggestions">
+            <h2>Explore more eco-destinations in Sri Lanka</h2>
+            <a class="suggestion-card" href="details.html">
+              <img src="assets/images/ella-eco-lodge.jpg" alt="Ella highland destination">
+              <span>Ella</span>
+              <small>18 eco-experiences</small>
+            </a>
+            <a class="suggestion-card" href="details.html">
+              <img src="assets/images/sinharaja-rainforest.jpg" alt="Sinharaja rainforest destination">
+              <span>Sinharaja</span>
+              <small>10 eco-experiences</small>
+            </a>
+            <a class="suggestion-card" href="details.html">
+              <img src="assets/images/yala-wildlife-safari.jpg" alt="Yala wildlife destination">
+              <span>Yala</span>
+              <small>14 eco-experiences</small>
+            </a>
+            <a class="suggestion-card" href="details.html">
+              <img src="assets/images/mirissa-whale-watching.jpg" alt="Mirissa coastal destination">
+              <span>Mirissa</span>
+              <small>8 eco-experiences</small>
+            </a>
+            <a class="suggestion-card" href="details.html">
+              <img src="assets/images/sigiriya-village-eco-tour.jpg" alt="Sigiriya village destination">
+              <span>Sigiriya</span>
+              <small>12 eco-experiences</small>
+            </a>
+          </div>
+
+          <div class="sidebar-card saved-shortlist" id="wishlist">
+            <p class="eyebrow">Wishlist</p>
+            <h2>Saved eco-experiences</h2>
+            <a href="details.html"><span>Knuckles Mountain Eco Hike</span><small>Sustainability Rating 4.9</small></a>
+            <a href="details.html"><span>Ella Eco-Lodge Stay</span><small>Sustainability Rating 4.7</small></a>
+            <a href="details.html"><span>Mirissa Whale Watching</span><small>Sustainability Rating 4.5</small></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand dark-brand" href="index.html">
+          <span>ETCP</span>
+          <small>Eco Tourism Ceylon Platform</small>
+        </a>
+        <p>Eco Tourism Ceylon Platform helps travellers discover verified, sustainable eco-tourism experiences across Sri Lanka.</p>
+      </div>
+      <div class="footer-column">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="search.html">Eco-Discovery Hub</a></li>
+          <li><a href="details.html">Featured Eco-Pass</a></li>
+          <li><a href="search.html#map">ETCP Voyager</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Journey</h2>
+        <ul>
+          <li><a href="index.html#passes">Eco-Passes</a></li>
+          <li><a href="index.html#journeys">Eco-Journeys</a></li>
+          <li><a href="search.html#wishlist">Wishlist</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Support</h2>
+        <ul>
+          <li><a href="index.html">About ETCP</a></li>
+          <li><a href="index.html#journeys">Help</a></li>
+          <li><a href="index.html#journeys">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>2026 ETCP. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <audio id="ecoSoundscape" loop preload="metadata">
+    <source src="assets/videos/this-is-sri-lanka-cinematic-travel-film-128-ytshorts.savetube.me.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="soundscape-toggle" id="soundscapeToggle" type="button" aria-label="Play Eco Soundscape">
+    <span class="soundscape-icon" aria-hidden="true">&#9835;</span>
+    <span class="soundscape-text">Eco Soundscape</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

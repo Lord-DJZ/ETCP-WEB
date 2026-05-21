@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your ETCP Eco-Pass booking for Knuckles Mountain Eco Hike.">
+  <title>Complete Your Booking | ETCP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page booking-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="ETCP home">
+        <span>ETCP</span>
+        <small>Eco Tourism Ceylon Platform</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="primary-menu" id="primaryMenu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Discover</a></li>
+          <li><a href="index.html#journeys">Eco-Journeys</a></li>
+          <li><a href="search.html#map">Voyager Map</a></li>
+          <li><a href="search.html#wishlist">Wishlist</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="login-link" href="login.html">Login</a>
+          <a class="btn btn-primary nav-cta" href="search.html">Start Exploring</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="booking-hero section-reveal" aria-labelledby="booking-title">
+      <div class="booking-hero-overlay" aria-hidden="true"></div>
+      <div class="container booking-hero-content reveal-child">
+        <p class="eyebrow">Verified Eco-Provider</p>
+        <h1 id="booking-title">Complete Your Booking</h1>
+        <p>Confirm your traveller details, review your eco-contribution, and complete your ETCP Eco-Pass booking.</p>
+      </div>
+    </section>
+
+    <section class="section booking-flow-section section-reveal" aria-labelledby="booking-flow-title">
+      <div class="container booking-flow-grid">
+        <div class="booking-form-column">
+          <div class="step-progress reveal-child" aria-label="Booking progress">
+            <span class="active">Details</span>
+            <span class="active">Traveller Information</span>
+            <span>Review</span>
+            <span>Confirmation</span>
+          </div>
+
+          <article class="selected-experience-card booking-selected reveal-child">
+            <img src="assets/images/knuckles-mountain-hike.jpg" alt="Knuckles Mountain Eco Hike">
+            <div>
+              <span class="badge badge-rating">Sustainability Rating 4.9</span>
+              <h2 id="booking-flow-title">Knuckles Mountain Eco Hike</h2>
+              <p>Knuckles, Sri Lanka &middot; Full day &middot; Provider: Knuckles Eco Trails</p>
+            </div>
+          </article>
+
+          <form class="booking-form reveal-child" aria-label="ETCP booking form">
+            <fieldset>
+              <legend>Traveller Details</legend>
+              <div class="form-grid">
+                <label>
+                  <span>Full name</span>
+                  <input type="text" name="full-name" autocomplete="name" placeholder="Enter your full name" required>
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                  <span>Phone number</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="+94 77 000 0000" required>
+                </label>
+                <label>
+                  <span>Number of travellers</span>
+                  <select name="travellers">
+                    <option>1 traveller</option>
+                    <option>2 travellers</option>
+                    <option>3 travellers</option>
+                    <option>4 travellers</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Date</span>
+                  <input type="date" name="date" value="2026-06-24">
+                </label>
+                <label>
+                  <span>Preferred start time</span>
+                  <select name="start-time">
+                    <option>07:00 AM</option>
+                    <option>08:00 AM</option>
+                    <option>09:00 AM</option>
+                  </select>
+                </label>
+                <label class="full-field">
+                  <span>Special requirements / accessibility needs</span>
+                  <textarea name="requirements" rows="4" placeholder="Tell the provider about dietary needs, accessibility support, or hiking concerns."></textarea>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Payment Placeholder</legend>
+              <p class="form-note">Secure payment placeholder for prototype. No real payment will be processed.</p>
+              <div class="form-grid payment-grid">
+                <label>
+                  <span>Payment method</span>
+                  <select name="payment-method">
+                    <option>Credit / Debit Card</option>
+                    <option>ETCP Eco-Wallet</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Cardholder name</span>
+                  <input type="text" name="card-name" placeholder="Name on card">
+                </label>
+                <label class="full-field">
+                  <span>Card number placeholder</span>
+                  <input type="text" name="card-number" inputmode="numeric" placeholder="0000 0000 0000 0000">
+                </label>
+                <label>
+                  <span>Expiry</span>
+                  <input type="text" name="expiry" placeholder="MM / YY">
+                </label>
+                <label>
+                  <span>CVC</span>
+                  <input type="text" name="cvc" inputmode="numeric" placeholder="123">
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <aside class="booking-summary-card reveal-child" aria-label="Booking price summary">
+          <p class="eyebrow">Booking Summary</p>
+          <h2>ETCP Eco-Pass</h2>
+          <dl>
+            <div><dt>Base price</dt><dd>LKR 15,000</dd></div>
+            <div><dt>Taxes / fees</dt><dd>LKR 1,200</dd></div>
+            <div><dt>Eco-contribution</dt><dd>LKR 750</dd></div>
+            <div class="summary-total"><dt>Total amount</dt><dd>LKR 16,950</dd></div>
+          </dl>
+          <a class="btn btn-primary" href="index.html#journeys">Confirm Booking</a>
+          <a class="btn btn-light" href="details.html">Back to Details</a>
+          <p class="trust-note">Free cancellation up to 48 hours before the experience. ETCP support is available before and during your journey.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand dark-brand" href="index.html">
+          <span>ETCP</span>
+          <small>Eco Tourism Ceylon Platform</small>
+        </a>
+        <p>Eco Tourism Ceylon Platform helps travellers discover verified, sustainable eco-tourism experiences across Sri Lanka.</p>
+      </div>
+      <div class="footer-column">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="search.html">Eco-Discovery Hub</a></li>
+          <li><a href="details.html">Featured Eco-Pass</a></li>
+          <li><a href="search.html#map">ETCP Voyager</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Journey</h2>
+        <ul>
+          <li><a href="index.html#journeys">Eco-Journeys</a></li>
+          <li><a href="search.html#wishlist">Wishlist</a></li>
+          <li><a href="login.html">Traveller Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Support</h2>
+        <ul>
+          <li><a href="index.html">About ETCP</a></li>
+          <li><a href="index.html#journeys">Help</a></li>
+          <li><a href="index.html#journeys">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>2026 ETCP. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <audio id="ecoSoundscape" loop preload="metadata">
+    <source src="assets/videos/this-is-sri-lanka-cinematic-travel-film-128-ytshorts.savetube.me.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="soundscape-toggle" id="soundscapeToggle" type="button" aria-label="Play Eco Soundscape">
+    <span class="soundscape-icon" aria-hidden="true">&#9835;</span>
+    <span class="soundscape-text">Eco Soundscape</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
